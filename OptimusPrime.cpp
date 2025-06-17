@@ -1,19 +1,19 @@
 #include <iostream>
 
-bool is_prime(int num) {
+bool isPrime(int num) {
 	if (num < 2) {
 		return false;
 	}
 
-	int max_possible_divider = static_cast<int>(std::sqrt(num));
-	for (size_t i = 2; i <= max_possible_divider; i++) {
+	int maxPossibleDivider = static_cast<int>(std::sqrt(num));
+	for (size_t i = 2; i <= maxPossibleDivider; i++) {
 		if (num % i == 0) {
-			return true;
+			return false;
 		}
 	}
 }
 
 
 int main() {
-	is_prime(3);
+	std::cout << (isPrime(5) ? "True" : "False") << std::endl;
 }
