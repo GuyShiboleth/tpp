@@ -1,3 +1,5 @@
 *.vcxproj*
 .vs/*
 *.sln
+tpp/*
+x64/*
