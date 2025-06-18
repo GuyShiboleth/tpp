@@ -2,15 +2,14 @@
 #include "OptimusPrime.h"
 
 #define VALID_EXIT_CODE (0)
-#define INVALID_EXIT_CODE (1)
 
 using std::sqrt;
 using std::endl;
 using std::cout;
 
-int isPrime(int num, bool* primeStatus) {
+bool isPrime(int num) {
 	if (num < 2) {
-		return INVALID_EXIT_CODE;
+		return false;
 	}
 
 	int maxPossibleDivider = static_cast<int>(sqrt(num));
@@ -19,13 +18,14 @@ int isPrime(int num, bool* primeStatus) {
 			return false;
 		}
 	}
-	return VALID_EXIT_CODE;
+	return true;
 }
 
 int main() {
-	bool primeStatus = false;
-	int isPrimeStatusCode = isPrime(47, &primeStatus);
+	bool primeStatus = isPrime(47);
+	cout << (primeStatus ? "True" : "False") << endl;
+	primeStatus = isPrime(48);
 	cout << (primeStatus ? "True" : "False") << endl;
 
-	return isPrimeStatusCode;
+	return VALID_EXIT_CODE;
 }

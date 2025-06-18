@@ -1,9 +1,8 @@
 /*
 * Checks if a number is prime
 *
-* @param[IN] num: The number to check if it's
-* @param[OUT] num: A boolean value indicating if the input is prime, if the input is invalid
+* @param[IN] num: The number to check if it's prime
 *
-* @return: A status code indicating if there was an error with the function
+* @return: A boolean value indicating if the input is prime
 */
-int isPrime(int num, bool* primeStatus);
+bool isPrime(int num);
