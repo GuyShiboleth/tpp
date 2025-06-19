@@ -1,6 +1,8 @@
 /**
 * Gets a positive number from the user
 *
-* @return The number the user inputted or 0 if the input was invalid
+* @param inputNum The number the user inputted or -1 if the input was invalid
+* 
+* @return A status code indicating if there was an error with the function
 */
-int getPositiveNum();
+int getPositiveNum(unsigned int* inputNum);
