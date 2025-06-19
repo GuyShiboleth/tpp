@@ -1,8 +1,6 @@
 #include <iostream>
 #include "OptimusPrime.h"
 
-#define VALID_EXIT_CODE (0)
-
 using std::sqrt;
 using std::endl;
 using std::cout;
