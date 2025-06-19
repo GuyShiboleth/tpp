@@ -20,12 +20,3 @@ bool isPrime(int num) {
 	}
 	return true;
 }
-
-int main() {
-	bool primeStatus = isPrime(47);
-	cout << (primeStatus ? "True" : "False") << endl;
-	primeStatus = isPrime(48);
-	cout << (primeStatus ? "True" : "False") << endl;
-
-	return VALID_EXIT_CODE;
-}
