@@ -12,6 +12,7 @@ public:
 	myString& operator= (const myString& str);
 	// For printing
 	friend std::ostream& operator<<(std::ostream& out, const myString& s);
+
 private:
-	char* m_string;
+	char* m_string{};
 };
